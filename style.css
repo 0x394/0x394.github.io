@@ -1,0 +1,59 @@
+@import url('https://cdn.jsdelivr.net/npm/bulma@0.8.0/css/bulma.css');
+@import url('https://fonts.googleapis.com/css?family=Fira+Mono&display=swap');
+
+*:not(i) {
+    font-family: 'Fira Mono', monospace;
+}
+
+html {
+    background-image: url('./background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100%;
+    width: 100%;
+    overflow: auto;
+}
+
+.presentation .box {
+    text-align: center;
+    width: fit-content;
+    margin: auto;
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    background-color: #1d1d1d;
+}
+
+.presentation .box .logo {
+    height: 150px;
+    width: 150px;
+    background-image: url('./logo.gif');
+    background-size: cover;
+    background-position: center;
+    border-radius: 50%;
+    margin: auto;
+    margin-bottom: 1rem;
+}
+
+.presentation .box span {
+    color: #f8d23f;
+}
+
+.presentation .box .urls a {
+    color: #f8d23f;
+    transition: 0.3s;
+    display: inline-block;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+}
+
+.presentation .box .urls a:hover, .presentation .box .urls a:focus, .presentation .box .urls a:active {
+    color: #a18515;
+    transform: scale(2);
+}
+
+.presentation .box .subtitle {
+    margin-bottom: 0.5rem;
+}
+
+.title, .subtitle {
+    color: whitesmoke;
+}
