@@ -6,12 +6,10 @@
 }
 
 html {
-    background-image: url('./background.jpg');
-    background-size: cover;
-    background-position: center;
     height: 100%;
     width: 100%;
     overflow: auto;
+    background-color: black;
 }
 
 .presentation .box {
@@ -25,7 +23,7 @@ html {
 .presentation .box .logo {
     height: 150px;
     width: 150px;
-    background-image: url('./logo.gif');
+    background-image: url('./logo.png');
     background-size: cover;
     background-position: center;
     border-radius: 50%;
@@ -34,11 +32,11 @@ html {
 }
 
 .presentation .box span {
-    color: #f8d23f;
+    color: #681a20;
 }
 
 .presentation .box .urls a {
-    color: #f8d23f;
+    color: #681a20;
     transition: 0.3s;
     display: inline-block;
     padding-right: 0.5rem;
@@ -46,7 +44,7 @@ html {
 }
 
 .presentation .box .urls a:hover, .presentation .box .urls a:focus, .presentation .box .urls a:active {
-    color: #a18515;
+    color: #d4424e;
     transform: scale(2);
 }
 
@@ -56,4 +54,12 @@ html {
 
 .title, .subtitle {
     color: whitesmoke;
+}
+
+canvas {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
 }
