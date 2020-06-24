@@ -1,3 +1,20 @@
-# arch.wtf
+# 0x394.github.io
 
-This is my website, nothing else. (yes i'm 0x394 in github but it's not really a problem)
+## Build Setup
+
+```bash
+# install dependencies
+$ yarn install
+
+# serve with hot reload at localhost:3000
+$ yarn dev
+
+# build for production and launch server
+$ yarn build
+$ yarn start
+
+# generate static project
+$ yarn generate
+```
+
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
