@@ -15,20 +15,32 @@ export default {
   ** See https://nuxtjs.org/api/configuration-head
   */
   head: {
-    title: process.env.npm_package_name || '',
+    title: '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: 'Hello, I\'m arch. I\'m a freelance developper.' },
+      { hid: 'og:title', name: 'og:title', content: 'arch.wtf' },
+      { hid: 'og:image', name: 'og:image', content: 'https://arch.wtf/og_logo.jpg' },
+      { hid: 'og:type', name: 'og:type', content: 'website' },
+      { hid: 'og:url', name: 'og:url', content: 'https://arch.wtf' },
+      { hid: 'og:description', name: 'og:description', content: 'Hello, I\'m arch. I\'m a freelance developper.' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Nunito|Poppins' },
+      { rel: 'stylesheet', href: 'https://cdn.materialdesignicons.com/5.3.45/css/materialdesignicons.min.css' },
+      { rel: 'favicon', href: '/og_logo.png', type: 'image/png' }
+    ],
+    script: [
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js' },
+      { src: 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/js/all.min.js' }
     ]
   },
   /*
   ** Global CSS
   */
   css: [
+    '@/assets/css/style.css'
   ],
   /*
   ** Plugins to load before mounting the App
